@@ -181,6 +181,6 @@ public class Employee implements Serializable{
         return "Id = " + id + "\n"
                 + "Full Name: " + fullName + "\n"
                 + "Birth Date: " + birthDate.toString() + "\n"
-                + "Department id: " + department.getId() + "\n";
+                + "Department id: " + department == null ? "null" : department.getId() + "\n";
     }
 }
