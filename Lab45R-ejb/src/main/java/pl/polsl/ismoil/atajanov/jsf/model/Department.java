@@ -97,7 +97,6 @@ public class Department implements Serializable {
      * @return current name
      */
     public String getDepartmentName() {
-        if(departmentName.length() == 0) return "---";
         return departmentName;
     }
 
@@ -114,7 +113,6 @@ public class Department implements Serializable {
      * @return current address  
      */
     public String getAddress() {
-        if(address.length() == 0) return "---";
         return address;
     }
 

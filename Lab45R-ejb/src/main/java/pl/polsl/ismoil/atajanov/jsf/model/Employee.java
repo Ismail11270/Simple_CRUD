@@ -86,7 +86,6 @@ public class Employee implements Serializable{
      * @return Employee's name
      */
     public String getFullName() {
-        if(fullName.length() == 0) return "---";
         return fullName;
     }
     /**

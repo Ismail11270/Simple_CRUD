@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Employee Edit</title>
+    </h:head>
+    <h:body>
+
+        <h:form id="employee-edit-form" prependId="false">
+            <p:panel header="Employee">
+                <p:messages id="msgs"/>
+                <h:panelGrid columns="3" cellpadding="5">
+
+                    <p:outputLabel value="Name" for="name"/>
+                    <p:inputText id="name" required="true"
+                                 value="#{employeeController.employee.fullName}">
+                        <f:validateLength maximum="50"/>
+                        <p:ajax update="msgName" event="keyup"/>
+                    </p:inputText>
+                    <p:message for="name" id="msgName"  display="both"/>
+
+                    <p:outputLabel value="Date of birth" for="bd"/>
+                    <p:inputText id="bd" required="true"
+                                 value="#{employeeController.employee.birthDate}"
+                                 placeholder="yyyy-MM-dd"
+                                 >
+                        <f:convertDateTime pattern="yyyy-MM-dd"/>
+                        <p:ajax update="msgBd" event="keyup"/>
+                    </p:inputText>
+                    <p:message for="bd" id="msgBd"  display="both"/>
+
+                    <p:outputLabel value="Department id" for="dep"/>
+                    <p:inputText id="dep" required="false"
+                                 value="#{employeeController.department}">
+                        <p:ajax update="msgDep" event="keyup"/>
+                        <f:convertNumber integerOnly="true"/>
+                    </p:inputText>
+                    <p:message for="dep" id="msgDep"  display="both"/>
+
+                    <f:facet name="footer">
+                        <p:commandButton id="save-btn" value="Save"
+                                         update="@form"
+                                         action="#{employeeController.actionSave()}"
+                                         icon="pi pi-check"
+                                         />                                     
+                    </f:facet>
+                </h:panelGrid>
+            </p:panel>
+        </h:form>
+    </h:body>
+</html>
+

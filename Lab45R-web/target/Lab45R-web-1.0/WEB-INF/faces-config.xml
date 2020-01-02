@@ -12,16 +12,45 @@
             <redirect/>
         </navigation-case>
         <navigation-case>
-            <from-outcome>employees</from-outcome>
+            <from-outcome>list-emp</from-outcome>
             <to-view-id>/employees.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
         <navigation-case>
-            <from-outcome>departments</from-outcome>
+            <from-outcome>edit-emp</from-outcome>
+            <to-view-id>/employees-edit.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>edit-dep</from-outcome>
+            <to-view-id>/departments-edit.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>list-dep</from-outcome>
             <to-view-id>/departments.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
         
     </navigation-rule>
-    
+    <managed-bean>
+        <managed-bean-name>employeeController</managed-bean-name>
+        <managed-bean-class>pl.polsl.ismoil.atajanov.jsf.EmployeeController</managed-bean-class>
+        <managed-bean-scope>request</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>employeesController</managed-bean-name>
+        <managed-bean-class>pl.polsl.ismoil.atajanov.jsf.EmployeesController</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>departmentController</managed-bean-name>
+        <managed-bean-class>pl.polsl.ismoil.atajanov.jsf.DepartmentController</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>departmentsController</managed-bean-name>
+        <managed-bean-class>pl.polsl.ismoil.atajanov.jsf.DepartmentsController</managed-bean-class>
+        <managed-bean-scope>view</managed-bean-scope>
+    </managed-bean>
 </faces-config>

@@ -29,7 +29,7 @@ public class DepartmentBean {
      * @param department
      * @return 
      */
-    public Department createOrUpdateEmployee(Department department) {
+    public Department createOrUpdateDepartment(Department department) {
         if (department.getId() == null) {
             em.persist(department);
         } else {
