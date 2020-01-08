@@ -14,8 +14,8 @@
                          rowIndexVar="i" 
                          emptyMessage="No employees found"
                          value="#{employeesController.employees}">
-                <p:column headerText="No.">
-                    <h:outputText value="#{i + 1}"/>
+                <p:column headerText="ID">
+                    <h:outputText value="#{emp.id}"/>
                 </p:column>
                 <p:column headerText="Name">
                     <h:outputText value="#{emp.fullName}"/>
@@ -34,6 +34,7 @@
                 </p:column>
                 <f:facet name="footer">
                     <p:commandButton id="new-btn" value="New" action="edit-emp"/>
+                    <p:commandButton id="menu-btn" value="Menu" action="list"/>
                 </f:facet>
             </p:dataTable>
         </h:form>

@@ -5,6 +5,7 @@
  */
 package pl.polsl.ismoil.atajanov.jsf.beans;
 
+import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -14,7 +15,6 @@ import org.junit.AfterClass;
 import static org.junit.Assert.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 
 /**
  * Test class for EmployeeBean bean
@@ -25,37 +25,55 @@ import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 public class EmployeeBeanTest {
 
     private static EJBContainer container;
-    private static EmployeeBean bean;
+    private static EmployeeBean employeeBean;
 
     @BeforeClass
     public static void init() throws NamingException {
         Properties properties = new Properties();
 
-        properties.put("abc", "new://Resource?type=DataSource");
-        properties.put("abc.UserName", "root");
-        properties.put("abc.Password", "Ismail_05-09");
-        properties.put("abc.JdbcUrl",
+        properties.put("xyz", "new://Resource?type=DataSource");
+        properties.put("xyz.UserName", "root");
+        properties.put("xyz.Password", "Ismail_05-09");
+        properties.put("xyz.JdbcUrl",
                 "jdbc:mysql://localhost:3306/lab_db");
-        properties.put("abc.JdbcDriver", "com.mysql.cj.jdbc.Driver");
-        properties.put("abc.JtaManaged", "true");
-        properties.put("abc.ConnectionProperties",
+        properties.put("xyz.JdbcDriver", "com.mysql.cj.jdbc.Driver");
+        properties.put("xyz.JtaManaged", "true");
+        properties.put("xyz.ConnectionProperties",
                 "useSSL=false;allowPublicKeyRetrieval=true");
         container = EJBContainer.createEJBContainer(properties);
-        bean = (EmployeeBean) container.getContext().lookup("java:global/Lab45R-ejb/EmployeeBean");
+        employeeBean = (EmployeeBean) container.getContext().lookup("java:global/Lab45R-ejb/EmployeeBean");
+
+        try {
+            employeeBean.findAllEmployees();
+        } catch (Exception e) {
+
+        }
     }
+
+    @Test
+    public void testCreateAndDelete() {
+        Employee employee = new Employee("Ismoil", new Date(), null);
+        assertNull("Must be null", employee.getId());
+        employeeBean.createOrUpdate(employee);
+        assertNotNull("Must be non null", employee.getId());
+        int id = employee.getId();
+        
+        //test delete
+        employeeBean.remove(id);
+        Employee emp = employeeBean.findById(id); 
+        assertNull("Deleting failed",emp);
+    }
+
+    @Test
+    public void testFindAll(){
+        List<Employee> findAll = employeeBean.findAllEmployees();
+        assertNotNull("Find all test failed, list is null", findAll);
+    }
+  
 
     @AfterClass
     public static void end() {
         container.close();
     }
-
-    @Test
-    public void testCreate() {
-        Employee employee = new Employee("Ismoil", new Date(), null);
-        assertNull("Must be null", employee.getId());
-//       bean.createOrUpdateEmployee(employee);
-//        employee = bean.findEmployeeById(1);
-        List<Employee> findAllEmployees = bean.findAllEmployees();
-        assertNotNull("Must be non null", employee.getId());
-    }
+   
 }

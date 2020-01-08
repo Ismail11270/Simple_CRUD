@@ -1,16 +1,17 @@
 package pl.polsl.ismoil.atajanov.jsf.beans;
 
+import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 
 /**
  * A bean for CRUD operations on Employee table
  *
  * @author Ismoil Atajanov
+ * @version 1.0
  */
 @Stateless
 @LocalBean
@@ -27,7 +28,7 @@ public class EmployeeBean {
      * @param employee
      * @return 
      */
-    public Employee createOrUpdateEmployee(Employee employee) {
+    public Employee createOrUpdate(Employee employee) {
         if (employee.getId() == null) {
             em.persist(employee);
         } else {
@@ -41,7 +42,7 @@ public class EmployeeBean {
      * @param id id of the employee to look for
      * @return employee object
      */
-    public Employee findEmployeeById(Integer id) {
+    public Employee findById(Integer id) {
         return em.find(Employee.class, id);
     }
 
@@ -49,8 +50,8 @@ public class EmployeeBean {
      * Deleting employee from the table
      * @param id id of the employee to delete
      */
-    public void removeEmployee(Integer id) {
-        Employee employee = findEmployeeById(id);
+    public void remove(Integer id) {
+        Employee employee = findById(id);
 
         if (employee != null) {
             em.remove(employee);

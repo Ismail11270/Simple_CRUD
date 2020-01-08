@@ -7,9 +7,7 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.context.FacesContext;
 import pl.polsl.ismoil.atajanov.jsf.beans.DepartmentBean;
-import pl.polsl.ismoil.atajanov.jsf.beans.EmployeeBean;
 import pl.polsl.ismoil.atajanov.jsf.model.Department;
-import pl.polsl.ismoil.atajanov.jsf.model.Employee;
 
 /**
  * Controller class, controlling only a current employee
@@ -59,7 +57,7 @@ public class DepartmentController {
      * @return action string
      */
     public String actionSave(){
-        departmentBean.createOrUpdateDepartment(department);
+        departmentBean.createOrUpdate(department);
         return "list-dep";
     }
     

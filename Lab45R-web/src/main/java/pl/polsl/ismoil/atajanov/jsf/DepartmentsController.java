@@ -30,7 +30,7 @@ public class DepartmentsController {
      * @return a list of departments
      */
     public List<Department> getDepartments(){
-        return departmentBean.findAllDepartment();
+        return departmentBean.findAllDepartments();
     }
     
     /**
@@ -48,6 +48,6 @@ public class DepartmentsController {
      * @param department object to remove
      */
     public void actionListenerRemove(Department department){
-        departmentBean.removeDepartment(department.getId());
+        departmentBean.remove(department.getId());
     }
 }

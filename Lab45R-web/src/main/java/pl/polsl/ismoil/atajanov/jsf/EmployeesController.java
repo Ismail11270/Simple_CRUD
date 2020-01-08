@@ -46,6 +46,6 @@ public class EmployeesController {
      * @param employee an employee to remove
      */
     public void actionListenerRemove(Employee employee){
-        employeeBean.removeEmployee(employee.getId());
+        employeeBean.remove(employee.getId());
     }
 }

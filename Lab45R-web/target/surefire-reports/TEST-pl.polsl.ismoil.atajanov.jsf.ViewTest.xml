@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="pl.polsl.ismoil.atajanov.jsf.ViewTest" time="14.76" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="test" value="pl.polsl.ismoil.atajanov.jsf.ViewTest#testView"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Ismail\Desktop\Projects\NetBeans\Lab45R\Lab45R-web"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Ismail\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-cos.jar;C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-cos.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-11.0.5\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Java\jdk-11.0.5\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\SDK\Go\bin;C:\Users\Ismail\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\CLion 2019.2.5\bin;;C:\Users\Ismail\go\bin;C:\Users\Ismail\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Ismail"/>
+    <property name="user.timezone" value="Europe/Belgrade"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Ismail"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_231\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=pl.polsl.ismoil.atajanov.jsf.ViewTest#testView -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar;C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-cos.jar;C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-cos.jar -Dfile.encoding=UTF-8 surefire:test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_231\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_231\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="pl.polsl.ismoil.atajanov.jsf.ViewTest" name="testView" time="14.684">
+    <failure message="Should be Departments list expected:&lt;Department[s lis]t&gt; but was:&lt;Department[ edi]t&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Should be Departments list expected:&lt;Department[s lis]t&gt; but was:&lt;Department[ edi]t&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at pl.polsl.ismoil.atajanov.jsf.ViewTest.testView(ViewTest.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:45)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+</failure>
+    <system-out>Department
+Name*	SomeDepartment	
+Address*	Kujawska	
+Save
+
+Department edit
+
+Department
+Name: Validation Error: Value is required.
+Address: Validation Error: Value is required.
+Name*		
+Name: Validation Error: Value is required.
+Address*		
+Address: Validation Error: Value is required.
+Save
+Department edit
+
+Department
+Name: Validation Error: Value is required.
+Address: Validation Error: Value is required.
+Name*		
+Name: Validation Error: Value is required.
+Address*		
+Address: Validation Error: Value is required.
+Save
+</system-out>
+    <system-err>Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [1:340] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [1:401] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [60:2715] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [60:3570] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [66:335] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [66:673] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:15 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [1:340] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [1:401] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [60:2715] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [60:3570] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [66:335] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css;jsessionid=6a1e7d14fb93d0c815745e79dcb9?ln=primefaces&amp;v=6.0&apos; [66:673] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:16 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [1:340] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [1:401] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [60:2715] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [60:3570] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [66:335] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [66:673] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23178] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23220] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Error in style rule. (Invalid token &quot;html&quot;. Was expecting one of: &lt;S&gt;, &lt;LBRACE&gt;, &quot;.&quot;, &quot;:&quot;, &quot;[&quot;, &lt;COMMA&gt;, &lt;HASH&gt;, &lt;S&gt;.)
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler warning
+WARNING: CSS warning: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/theme.css?ln=primefaces-aristo&apos; [1:23269] Ignoring the following declarations in this rule.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [1:340] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [1:401] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [60:2715] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [60:3570] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [66:335] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.DefaultCssErrorHandler error
+WARNING: CSS error: &apos;http://localhost:8080/Lab45R-web/faces/javax.faces.resource/components.css?ln=primefaces&amp;v=6.0&apos; [66:673] Error in declaration. &apos;*&apos; is not allowed as first char of a property.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:17 PM com.gargoylesoftware.htmlunit.IncorrectnessListenerImpl notify
+WARNING: Obsolete content type encountered: &apos;text/javascript&apos;.
+Jan 08, 2020 8:29:20 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:20 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:20 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:20 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+Jan 08, 2020 8:29:23 PM com.gargoylesoftware.htmlunit.html.HtmlScript isExecutionNeeded
+WARNING: Script is not JavaScript (type: true/text/javascript, language: ). Skipping execution.
+</system-err>
+  </testcase>
+</testsuite>

@@ -29,6 +29,10 @@ public class EmployeeController {
      */
     @EJB
     private EmployeeBean employeeBean;
+    
+    /**
+     * DepartmentBean object that allows to perform CRUD operations on department table
+     */
     @EJB
     private DepartmentBean departmentBean;
     
@@ -53,10 +57,18 @@ public class EmployeeController {
         return employee;
     }
     
+    /**
+     * Set a new department for the employee
+     * @param id id of the department
+     */
     public void setDepartment(Integer id){
-        employee.setDepartment(departmentBean.findDepartmentById(id));
+        employee.setDepartment(departmentBean.findById(id));
     }
     
+    /**
+     * Get an id of employee's department
+     * @return department id
+     */
     public Integer getDepartment(){
         return employee.getDepartment()==null ? null : employee.getDepartment().getId();
     }
@@ -66,7 +78,7 @@ public class EmployeeController {
      * @return action string
      */
     public String actionSave(){
-        employeeBean.createOrUpdateEmployee(employee);
+        employeeBean.createOrUpdate(employee);
         return "list-emp";
     }
     

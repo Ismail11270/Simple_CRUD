@@ -13,23 +13,19 @@
                          rowIndexVar="i"
                          emptyMessage="No departments found"
                          value="#{departmentsController.departments}">
-       
-                <p:column headerText="No.">
-                    <h:outputText value="#{i+1}"/>
-                </p:column>
-                
+
                 <p:column headerText="ID">
                     <h:outputText value="#{dep.id}"/>
                 </p:column>
-                
+
                 <p:column headerText="Name">
                     <h:outputText value="#{dep.departmentName}"/>
                 </p:column>
-                
+
                 <p:column headerText="Address">
                     <h:outputText value="#{dep.address}"/>
                 </p:column>
-                
+
                 <p:column headerText="Actions">
                     <h:commandButton id="edit-btn" value="Edit"
                                      action="#{departmentsController.actionEdit(dep)}"/>
@@ -37,11 +33,12 @@
                     <h:commandButton id="del-btn" value="Delete"
                                      actionListener="#{departmentsController.actionListenerRemove(dep)}"/>
                 </p:column>
-                
+
                 <f:facet name="footer">
                     <p:commandButton id="new-btn" value="New" action="edit-dep"/>
+                    <p:commandButton id="menu-btn" value="Menu" action="list"/>
                 </f:facet>
-                
+
             </p:dataTable>
         </h:form>
     </h:body>

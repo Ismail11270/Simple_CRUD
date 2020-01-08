@@ -36,7 +36,7 @@
     <managed-bean>
         <managed-bean-name>employeeController</managed-bean-name>
         <managed-bean-class>pl.polsl.ismoil.atajanov.jsf.EmployeeController</managed-bean-class>
-        <managed-bean-scope>request</managed-bean-scope>
+        <managed-bean-scope>view</managed-bean-scope>
     </managed-bean>
     <managed-bean>
         <managed-bean-name>employeesController</managed-bean-name>
